@@ -1,0 +1,23 @@
+env = "demo"
+poll_seconds = 10
+
+[base_url]
+demo = "https://external-api.demo.kalshi.co/trade-api/v2"
+prod = "https://external-api.kalshi.com/trade-api/v2"   # override with KALSHI_PROD_BASE_URL (api.elections.kalshi.com also works)
+
+[tickers]
+# Example demo tickers (checked open on Oct 27, 2026). Markets expire: replace these with
+# tickers you find on demo.kalshi.co before you run the bot.
+demo = ["KXNBASPREAD-26OCT28OKCDAL-OKC5", "KXNBASPREAD-26OCT28OKCDAL-OKC9", "KXNHLSPREAD-26OCT27MINUTA-MIN4"]
+prod = []
+
+[strategy]
+margin = 0.03
+
+[strategy.fair]   # placeholders, not forecasts. Put YOUR own fair values here.
+"KXNBASPREAD-26OCT28OKCDAL-OKC5" = 0.62
+"KXNBASPREAD-26OCT28OKCDAL-OKC9" = 0.40
+"KXNHLSPREAD-26OCT27MINUTA-MIN4" = 0.05
+
+[research]
+enabled = false

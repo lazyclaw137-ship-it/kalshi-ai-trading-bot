@@ -1,0 +1,1 @@
+{"max_contracts_per_order": 1, "max_open_exposure_usd": 5, "max_daily_loss_usd": 2, "max_orders_per_minute": 3, "order_group_contracts_limit": 3}

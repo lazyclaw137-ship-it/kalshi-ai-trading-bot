@@ -1,0 +1,23 @@
+# secrets: never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# bot state and logs
+KILL
+logs/
+state/
+state.json
+bot.lock
+paper_ledger*.json
+*.jsonl
+*.sqlite
+
+# python
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
